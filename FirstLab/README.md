@@ -6,7 +6,7 @@
 1. Slf4j – интерфейс для системы логирования
 2. Logback - система логирования
 3. Apache commons compress - библиотека с архиваторами
-4. Apache commons CLI (command line interface) - парсер командной строки
+4. **ЗАМЕНИЛ НА PICOCLI** Apache commons CLI (command line interface) - парсер командной строки 
 5. Lombok - плагин для прозрачной генерации Java кода с помощью аннотаций (опционально)
 
 Собрать Hello World приложение с системой логирования и запуском скриптом сгенерированным gradle из командной строки.
