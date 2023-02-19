@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'org.jetbrains.kotlin.jvm' version '1.8.0'
 }
 
 group 'org.example'
@@ -30,6 +31,7 @@ dependencies {
     //lombok
     compileOnly 'org.projectlombok:lombok:1.18.4'
     annotationProcessor 'org.projectlombok:lombok:1.18.4'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
 }
 
 compileJava {
@@ -38,4 +40,14 @@ compileJava {
 
 test {
     useJUnitPlatform()
+}
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+compileTestKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
 }
